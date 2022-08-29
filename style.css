@@ -1,0 +1,65 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    /*remove it*/
+    text-align: center;
+    /*remove it*/
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: darkgray;
+}
+
+
+nav{
+    height: 56px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+
+.active{
+    visibility: visible;
+    width: 75px;
+    position: fixed;
+    top: 56px;
+    height: 100vh;
+    left: 0;
+    background-color: aqua;
+    
+}
+
+.none-active{
+    width: 245px;
+    visibility: hidden;
+    position: fixed;
+    top: 56px;
+    height: 100vh;
+    left: 0;
+    background-color: aqua;
+}
+
+
+.carousel{
+    height: 56px;
+    background-color:brown;
+    position: fixed;
+    top: 56px;
+    width:95%;
+    margin-left: 75px;
+    text-align: center;
+}
+
+main{
+    background-color:coral;
+    height:1200px;
+    margin-left: 75px;
+    margin-top: 94px;
+}
+
+span{
+    background-color: blue;
+}
+
