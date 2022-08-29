@@ -63,3 +63,44 @@ span{
     background-color: blue;
 }
 
+
+
+
+
+
+
+
+
+
+/*responsive layout*/
+@media screen and (max-width: 1312px) {
+    .none-active{
+        top: 0px;
+        /*height: 100vh;*/
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 791px) {
+    .active{
+        visibility: hidden;
+    }
+    .none-active{
+        width: 245px;
+        top: 0px;
+        height: 95vh;
+    }
+    
+    
+    .carousel{
+        margin-left: 0px;
+    }
+    
+    main{
+        background-color:coral;
+        height:1200px;
+        margin-left: 0px;
+        margin-top: 94px;
+    }
+}
+
