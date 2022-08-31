@@ -18,6 +18,8 @@ nav{
     position: fixed;
     top: 0;
     width:100%;
+    border: 2px solid aqua;
+    
 }
 
 .active{
@@ -28,6 +30,7 @@ nav{
     height: 100vh;
     left: 0;
     background-color: aqua;
+    border: 2px solid black;
     
 }
 
@@ -39,6 +42,8 @@ nav{
     height: 100vh;
     left: 0;
     background-color: aqua;
+    border: 2px solid grey;
+    z-index: 1;
 }
 
 
@@ -47,16 +52,21 @@ nav{
     background-color:brown;
     position: fixed;
     top: 56px;
-    width:95%;
+    width:94.45%;
     margin-left: 75px;
     text-align: center;
+    border: 2px solid green;
+    
 }
 
 main{
     background-color:coral;
     height:1200px;
     margin-left: 75px;
-    margin-top: 94px;
+    margin-top: 112px;
+    border: 2px solid blueviolet;
+    
+    
 }
 
 span{
@@ -78,7 +88,10 @@ span{
         top: 0px;
         /*height: 100vh;*/
         z-index: 1;
+        
     }
+    
+   
 }
 
 @media screen and (max-width: 791px) {
@@ -86,6 +99,7 @@ span{
         visibility: hidden;
     }
     .none-active{
+        visibility: hidden;
         width: 245px;
         top: 0px;
         height: 95vh;
@@ -94,6 +108,7 @@ span{
     
     .carousel{
         margin-left: 0px;
+        width: 100%;
     }
     
     main{
