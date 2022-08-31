@@ -17,9 +17,7 @@ nav{
     background-color: red;
     position: fixed;
     top: 0;
-    width:100%;
-    border: 2px solid aqua;
-    
+    width:100%; 
 }
 
 .active{
@@ -30,8 +28,6 @@ nav{
     height: 100vh;
     left: 0;
     background-color: aqua;
-    border: 2px solid black;
-    
 }
 
 .none-active{
@@ -42,7 +38,6 @@ nav{
     height: 100vh;
     left: 0;
     background-color: aqua;
-    border: 2px solid grey;
     z-index: 1;
 }
 
@@ -55,18 +50,27 @@ nav{
     width:94.45%;
     margin-left: 75px;
     text-align: center;
-    border: 2px solid green;
-    
 }
 
 main{
     background-color:coral;
-    height:1200px;
+    height:2734px;
     margin-left: 75px;
     margin-top: 112px;
-    border: 2px solid blueviolet;
-    
-    
+    padding: 23px 23px;
+    display: grid;
+    grid-template-rows: 31.7fr 8.8fr 31.7fr;
+    grid-template-columns: 1fr;   
+}
+.main-section{
+    border: 2px solid red;
+}
+.short{
+    border: 2px solid blue;
+}
+
+.unlimited-section{
+    border: 2px solid green;
 }
 
 span{
@@ -102,20 +106,145 @@ span{
         visibility: hidden;
         width: 245px;
         top: 0px;
-        height: 95vh;
+        height: 100vh;
+        z-index: 1;
     }
     
     
     .carousel{
-        margin-left: 0px;
+        margin-left: 0px !important;
         width: 100%;
     }
     
     main{
         background-color:coral;
-        height:1200px;
-        margin-left: 0px;
-        margin-top: 94px;
+        margin-left: 0px !important;
+        margin-top: 112px;
+        
     }
 }
 
+
+
+
+
+/*MAIN LAYOUT*/
+.main-section div{
+    border: 2px solid aqua;
+}
+.unlimited-section div{
+    border: 2px solid aqua;
+}
+.unlimited-section {
+    padding:20px 0px;
+}
+.main-section,.unlimited-section{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 38px;
+}
+.short-cover div{
+    border: 2px solid aqua;
+}
+.short-cover{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    grid-template-rows: 1fr 0fr;
+    
+}
+
+@media screen and (max-width: 1127px){
+    .main-section,.unlimited-section{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+        column-gap: 15px;
+        row-gap: 38px;
+    }
+    .short-cover{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width: 871px){
+    .main-section,.unlimited-section{
+        display: grid;
+        grid-template-columns:1fr 1fr  ;
+        column-gap: 15px;
+        row-gap: 38px;
+
+    }
+    .short-cover{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 495px){
+    .main-section,.unlimited-section{
+        display: grid;
+        grid-template-columns:325px;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 38px;
+    }
+    .short-cover{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/*cover layout*/
+.main-section div{
+    display: grid;
+    grid-template-rows: 3.4fr 1fr 0.6fr;
+    row-gap: 10px;
+}
+.unlimited-section div{
+    display: grid;
+    grid-template-rows: 3.4fr 1fr 0.6fr;
+    row-gap: 10px;
+}
+
+.cover-top{
+    background-color: red;
+}
+.cover-middle{
+    background-color: green;
+}
+.cover-end{
+    background-color: blue;
+}
+
+.cover-middle{
+    display: grid;
+    grid-template-columns: 1.2fr 5.5fr 0.5fr;
+}
+
+.cover-middle div:nth-child(1){
+    background-color:cornflowerblue
+}
+
+.cover-middle div:nth-child(2){
+    background-color:crimson
+}
+
+.cover-middle div:nth-child(3){
+    background-color:darkgoldenrod
+}
+
+
+/*short layout*/
+.short{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5.8fr;
+    padding: 20px 0px;
+    row-gap: 10px;
+}
+
+.short section{
+    border: 2px solid red;
+}
