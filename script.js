@@ -6,7 +6,7 @@ let windowWidth=window.innerWidth
 let i=0
 largeAside.style.visibility="hidden"
 
-document.querySelector("span").addEventListener("click",function(){
+document.querySelector(".hamburger-menu-icon").addEventListener("click",function(){
     i+=1
     if(i%2===0&window.innerWidth>=1312){
         slidernav.style.marginLeft="75px"   
