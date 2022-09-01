@@ -295,6 +295,12 @@ nav{
     align-items: center;
 }
 
+/*WHEN FOCUNS ON KEYBORAD*/
+/* input:focus{
+    width:120% !important;
+    background-color: violet;
+}*/
+
 .nav-sec2 input{
     min-width: 0px;
     width: 100%;
@@ -408,4 +414,98 @@ nav{
     .nav-sec5 .camera-logo{
         flex-basis: 50%;
     }
+}
+
+
+
+/*aside layout*/
+/*aside small*/
+.active{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    padding-top: 7px;
+}
+
+.active .text-place{
+    font-size: 11.5px;
+    background-color:blue;
+}
+
+.active .logo-place{
+    background-color: red;
+    flex-basis: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-logo{
+    border: 2px solid blue;
+    flex-basis: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explore-logo{
+    border: 2px solid red;
+    flex-basis: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shorts-logo{
+    border: 2px solid green;
+    flex-basis: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscriptions{
+    border: 2px solid pink;
+    flex-basis: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.library{
+    border: 2px solid orange;
+    flex-basis: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*aside large*/
+.none-active{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+
+}
+
+.none-active > div{
+    padding: 12px 0px;
+    border-bottom: 1px solid black;
+
+}
+
+.none-active div section{
+    padding: 13px 27px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: aliceblue;
+}
+
+.menu-icon{
+   margin-right: 25px; 
+}
+.none-active div section:hover{
+    background-color: blue;
 }
