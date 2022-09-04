@@ -8,13 +8,13 @@
 }
 
 body{
-    background-color: darkgray;
+    background-color: #f9f9f9;
 }
 
 
 nav{
     height: 56px;
-    background-color: red;
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     width:100%; 
@@ -27,7 +27,7 @@ nav{
     top: 56px;
     height: 100vh;
     left: 0;
-    background-color: aqua;
+    background-color: #ffffff;
 }
 
 .none-active{
@@ -37,46 +37,44 @@ nav{
     top: 56px;
     height: 100vh;
     left: 0;
-    background-color: aqua;
+    background-color: #ffffff;
     z-index: 1;
 }
 
 
 .carousel{
     height: 56px;
-    background-color:brown;
+    background-color:#ffffff;
     position: fixed;
     top: 56px;
     width:94.45%;
     margin-left: 75px;
     text-align: center;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;;
 }
 
 main{
-    background-color:coral;
+    background-color:transparent;
     height:2734px;
     margin-left: 75px;
     margin-top: 112px;
     padding: 23px 23px;
     display: grid;
     grid-template-rows: 31.7fr 8.8fr 31.7fr;
-    grid-template-columns: 1fr;   
-}
-.main-section{
-    border: 2px solid red;
-}
-.short{
-    border: 2px solid blue;
+    grid-template-columns: 1fr;  
+    
 }
 
-.unlimited-section{
-    border: 2px solid green;
-}
 
 span{
-    background-color: blue;
+    background-color: red;
 }
 
+
+a,a:visited{
+    color:black
+}
 
 
 
@@ -117,9 +115,9 @@ span{
     }
     
     main{
-        background-color:coral;
         margin-left: 0px !important;
         margin-top: 112px;
+        
         
     }
 }
@@ -129,12 +127,7 @@ span{
 
 
 /*MAIN LAYOUT*/
-.main-section div{
-    border: 2px solid aqua;
-}
-.unlimited-section div{
-    border: 2px solid aqua;
-}
+   
 .unlimited-section {
     padding:20px 0px;
 }
@@ -143,11 +136,17 @@ span{
     grid-template-columns:1fr 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 38px;
+    padding-bottom: 20px;
+    
 }
-.short-cover div{
-    border: 2px solid aqua;
+
+.short{
+    border-top: 4px solid #e0e0e0;
+    border-bottom: 4px solid #e0e0e0;
 }
+
 .short-cover{
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 15px;
@@ -197,26 +196,18 @@ span{
 
 
 /*cover layout*/
-.main-section div{
+.main-section > div{
     display: grid;
-    grid-template-rows: 3.4fr 1fr 0.6fr;
+    grid-template-rows: 3.4fr 0.4fr 0.4fr;
     row-gap: 10px;
 }
-.unlimited-section div{
+.unlimited-section > div{
     display: grid;
-    grid-template-rows: 3.4fr 1fr 0.6fr;
+    grid-template-rows: 3.4fr 0.4fr 0.4fr;
     row-gap: 10px;
 }
 
-.cover-top{
-    background-color: red;
-}
-.cover-middle{
-    background-color: green;
-}
-.cover-end{
-    background-color: blue;
-}
+
 
 .cover-middle{
     display: grid;
@@ -224,15 +215,27 @@ span{
 }
 
 .cover-middle div:nth-child(1){
-    background-color:cornflowerblue
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    
 }
 
 .cover-middle div:nth-child(2){
-    background-color:crimson
+    display: flex;
+    
 }
 
 .cover-middle div:nth-child(3){
-    background-color:darkgoldenrod
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.cover-end{
+    display: grid;
+    grid-template-columns:1fr 5fr ;
+    
 }
 
 
@@ -245,9 +248,7 @@ span{
     row-gap: 10px;
 }
 
-.short section{
-    border: 2px solid red;
-}
+
 
 
 
@@ -262,7 +263,7 @@ nav{
 .nav-sec1{
    justify-self: flex-start;
    flex-basis: 160px;
-   background-color:deeppink;
+   background-color:#ffffff;
    margin-right: auto;
    flex-shrink: 0;
    display: flex;
@@ -273,13 +274,11 @@ nav{
 
 .nav-sec1 .hamburger-menu-icon{
     width: 25px;
-    border: 1px solid red;
+    
 }
 
 .nav-sec1 .youtube-logo-text{
-    
     width: 100px;
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 30% 70%;
 }
@@ -324,7 +323,8 @@ nav{
 .nav-sec3 div{
     flex-basis: 100%;
     height: 100%;
-    border: 2px solid green;
+    border: 1px solid #d3d3d3;
+    background-color:#f9f9f9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,37 +340,33 @@ nav{
 }
 .nav-sec4 div{
     padding: 10px 0px;
-    background-color: blue;
+    background-color: #f9f9f9;
     width: 100%;
     border-radius: 50%;
 }
 .nav-sec5{
     justify-self: flex-end;
     flex-basis: 175px;
-    background-color: coral;
+    background-color: #ffffff;
     margin-left: auto;
     flex-shrink: 0;
     display: flex;
-    justify-content:space-around;
-    align-items: stretch;
+
 }
 
 .nav-sec5 .camera-logo{
-    border: 2px solid red;
     flex-basis: 33%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .nav-sec5 .bell-logo{
-    border: 2px solid red;
     flex-basis: 33%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .nav-sec5 .usermame-logo{
-    border: 2px solid red;
     flex-basis: 33%;
     display: flex;
     align-items: center;
@@ -384,7 +380,7 @@ nav{
     }
     .nav-sec5{
         flex-basis: 143px;
-        background-color: coral;
+        background-color: white;
         margin-left: 10px;
         flex-shrink: 0;
     }
@@ -401,7 +397,6 @@ nav{
     
     .nav-sec5{
         flex-basis: 90px;
-        background-color: coral;
         margin-left: 10px;
         flex-shrink: 0;
     }
@@ -429,11 +424,11 @@ nav{
 
 .active .text-place{
     font-size: 11.5px;
-    background-color:blue;
+    background-color:ffffff;
 }
 
 .active .logo-place{
-    background-color: red;
+    background-color: ffffff;
     flex-basis: 35px;
     display: flex;
     justify-content: center;
@@ -442,7 +437,6 @@ nav{
 
 
 .home-logo{
-    border: 2px solid blue;
     flex-basis: 75px;
     display: flex;
     flex-direction: column;
@@ -450,7 +444,6 @@ nav{
 }
 
 .explore-logo{
-    border: 2px solid red;
     flex-basis: 75px;
     display: flex;
     flex-direction: column;
@@ -458,7 +451,6 @@ nav{
 }
 
 .shorts-logo{
-    border: 2px solid green;
     flex-basis: 75px;
     display: flex;
     flex-direction: column;
@@ -466,7 +458,6 @@ nav{
 }
 
 .subscriptions{
-    border: 2px solid pink;
     flex-basis: 75px;
     display: flex;
     flex-direction: column;
@@ -474,7 +465,6 @@ nav{
 }
 
 .library{
-    border: 2px solid orange;
     flex-basis: 75px;
     display: flex;
     flex-direction: column;
@@ -500,12 +490,12 @@ nav{
     padding: 13px 27px;
     display: flex;
     justify-content: flex-start;
-    background-color: aliceblue;
+    background-color: ffffff;
 }
 
 .menu-icon{
    margin-right: 25px; 
 }
 .none-active div section:hover{
-    background-color: blue;
+    background-color: #f2f2f2;
 }

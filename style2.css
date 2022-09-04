@@ -54,3 +54,144 @@
 
 
 /*COVER*/
+.main-section .cover-top{
+    background-image: url(./picture/1.jpg);
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.unlimited-section .cover-top{
+    background-image: url(./picture/1.jpg);
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+
+.cover-middle .logo div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: url(./icon/1.webp);
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.cover-middle p{
+    font-size: 15px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.userName{
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.userName i{
+    font-size: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*shorts*/
+
+.short .youtube-cover{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.short .youtube-cover > div:nth-child(3){
+    margin-left: 10px;
+}
+
+.short-cover .First-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.short-cover .First-section > div {
+    margin-bottom: 10px;
+}
+
+.short-cover .First-section > div:nth-child(1){
+    font-size: 20px;
+}
+
+.short-cover .First-section > div:nth-child(2){
+    font-size: 15px;
+    color: #579c5b;
+    background-color: #ececec;
+    padding: 1px 3px;
+}
+
+.short-cover .First-section > div:nth-child(4){
+      display: flex;
+      flex-direction: row;
+      padding: 5px 10px;
+      color:#1b6dd8;
+      background-color: #def1ff;
+}
+
+.short-cover .First-section > div:nth-child(4) div:nth-child(2){
+   margin-left: 5px; 
+}
+
+.short-cover .other-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.9fr 0.1fr;
+    row-gap: 10px;
+}
+
+.short-cover .other-section > div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.0fr 0.2fr;
+}
+
+.short-cover .other-section > div:nth-child(1) >div:nth-child(1){
+    background-image: url(./picture/1.jpg);
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.short-cover .other-section > div:nth-child(1) >div:nth-child(2){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 5px 10px;
+      color:#1b6dd8;
+      background-color: #def1ff;
+}
+
+.usermame-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usermame-logo div{
+    background-color: blueviolet;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+
