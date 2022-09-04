@@ -1,0 +1,56 @@
+/*ASIDE*/
+.section3 .menu-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(./icon/1.webp);
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size: 40px;
+    
+}
+
+
+.section3 section:nth-child(3) .menu-icon{
+    background-image:url(./icon/2.jpeg)
+}
+
+.section3 section:nth-child(4) .menu-icon{
+    background-image:url(./icon/3.jpeg)
+}
+
+.section3 section:nth-child(5) .menu-icon{
+    background-image:url(./picture/4.webp)
+}
+
+.section3 section:nth-child(6) .menu-icon{
+    background-image:url(./icon/5.webp)
+}
+
+.section3 section:nth-child(7) .menu-icon{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section3 .menu-name{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.youtube-logo{
+    width: 20px;
+}
+
+.youtube-logo2{
+    width: 30px;
+}
+/*ASDIE*/
+
+
+/*COVER*/
